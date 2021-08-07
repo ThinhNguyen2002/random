@@ -1,0 +1,98 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div id="wrap_content">
+            <h2 id="r1" class="title">Software Testing Class</h2>
+            <!-- Tab items -->
+            <div class="tabs">
+                <div class="tab-item active ">
+                    <i class="tab-icon fas fa-code"></i>
+                Randum
+                </div> 
+                <div class="tab-item">
+                    <i class="tab-icon fas fa-plus-circle"></i>
+                    Create
+                </div>
+                <div class="tab-item">
+                    <i class="tab-icon fas fa-pen-nib"></i>
+                    Stored
+                </div>
+                <div class="tab-item ">
+                    <i class="tab-icon fas fa-cog"></i>
+                    Setting
+                </div>
+                <div class="line"></div>
+            </div>
+        
+            <!-- Tab content -->
+            <div class="tab-content">
+                <div class="tab-pane active">
+                    <h2>Random Members</h2>
+                    <div class="form_group">
+                        <input type="text" placeholder="Randum name member..." class="form_input randum_user " value="" disabled>
+                        <button type="button" class="btn btn-outline-primary btn_randum">Random</button>
+                    </div>
+                </div> 
+                <div class="tab-pane">
+                    <h2>Create Member</h2>
+                    <div class="form_create"> 
+                        <div class="form-group">
+                            <label for="fullname" class="form-label title_form">Full Name</label>
+                            <input id="fullname" name="fullname" type="text" placeholder="VD: Thinh Nguyen" class="form-control input_value">
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="fullname" class="title_form form-label">Email Address</label>
+                            <input id="email" name="fullname" type="text" placeholder="thinhnguyenvan772@gmail.com" class="form-control input_value">
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="form-group"> 
+                            <button type="button" id="btn_create" class="btn btn-outline-info">Create</button>  
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane">
+                    <h2>List of members</h2>
+                     
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody id="members">
+                           
+                        </tbody>
+                      </table>
+                    
+                </div>
+                <div class="tab-pane"> 
+                </div>
+            </div>
+        </div> 
+    </div>
+    
+
+    <script src="./tabs.js"></script>
+</body>
+</html>
