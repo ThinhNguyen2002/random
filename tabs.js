@@ -31,7 +31,7 @@ tabs.forEach((tab, index) => {
 //  start randum_user
 
 const members = (() => {
-    const listMembers = [{ nameMember: 'ThinhNguyen', emailMember: 'Thinhnguyenvan772@gmail.com' }];
+    const listMembers = [{ nameMember: 'ThinhNguyen', emailMember: 'Thinhnguyenvan772@gmail.com' },{ nameMember: 'NhatNgo', emailMember: '__@gmail.com' },{ nameMember: 'UyNgo', emailMember: '__@gmail.com' }];
     let renderMembers = $('#members');
     let btnRandum = $('.btn-outline-primary.btn_randum');
     let createMembers = $('#btn_create'); 
