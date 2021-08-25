@@ -44,11 +44,11 @@ const members = (() => {
             listMembers.splice(index, 1);
         },
         render() {
-            let sort = 1;
+         
             var htmls = listMembers.map((member, index) =>
                 ` 
                     <tr>
-                        <th scope="row">${sort++}</th>
+                        <th scope="row">${++index}</th>
                         <td>${member.nameMember}</td>
                         <td>${member.emailMember}</td>
                         <td data-index="${index}" class="delete">
